@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Analyzer.Models.Enums;
 
-namespace Analyzer.Models.Enums
+namespace Analyzer.Models.Static
 {
     public static class SubmachineGuns
     {
-        public static List<string> ListSubmachineGuns = new List<string>()
+        public static Dictionary<string, string> ListSubmachineGuns = new Dictionary<string, string>()
         {
-            "MAC-10",
-            "MP9",
-            "MP7",
-            "MP5-SD",
-            "UMP-45",
-            "P90",
-            "PP19 Bison"
+            { "MAC-10","ListSkinsMAC10" },
+            { "MP9","ListSkinsMP9" },
+            { "MP7","ListSkinsMP7" },
+            { "MP5-SD","ListSkinsMP5SD" },
+            { "UMP-45","ListSkinsUMP45" },
+            { "P90","ListSkinsP90" },
+            { "PP19 Bison","ListSkinsPP19Bison" }
         };
 
         public static Dictionary<string, RarityStats> ListSkinsMAC10 = new Dictionary<string, RarityStats>()

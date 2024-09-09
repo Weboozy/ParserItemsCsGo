@@ -6,21 +6,21 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Analyzer.Models.Enums
+namespace Analyzer.Models.Static
 {
     public static class Pistols
     {
-        public static List<string> ListPistols = new List<string>() {
-            "Glock-18",
-            "USP-S",
-            "P2000",
-            "P250",
-            "Dual Berettas",
-            "Five-SeveN",
-            "Tec-9",
-            "CZ75-Auto",
-            "Revolver",
-            "Desert Eagle"
+        public static Dictionary<string, string> ListPistols = new Dictionary<string, string>() {
+            { "Glock-18","ListSkinsGlock18" },
+            { "USP-S","ListSkinsUSPS" },
+            { "P2000","ListSkinsP2000" },
+            { "P250","ListSkinsP250" },
+            { "Dual Berettas","ListSkinsDualBerettas" },
+            { "Five-SeveN","ListSkinsFiveSeveN" },
+            { "Tec-9","ListSkinsTec9" },
+            { "CZ75-Auto","ListSkinsCZ75Auto" },
+            { "Revolver","ListSkinsRevolver" },
+            { "Desert Eagle","ListSkinsDesertEagle" }
         };
 
         public static Dictionary<string, RarityStats> ListSkinsGlock18 = new Dictionary<string, RarityStats> {

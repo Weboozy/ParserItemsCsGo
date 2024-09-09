@@ -15,17 +15,17 @@ using System.Windows.Controls;
 using System.Windows.Media.Media3D;
 using Analyzer.Models.Enums;
 
-namespace Analyzer.Models.StaticClasses
+namespace Analyzer.Models.Static
 {
     public static class HeavyWeapons
     {
-        public static List<string> ListHeavyWeapons = new List<string> {
-            "Nova Shotgun",
-            "XM1014 Shotgun",
-            "MAG-7 Shotgun",
-            "Sawed-Off Shotgun",
-            "M249 machine gun",
-            "Negev machine gun"
+        public static Dictionary<string, string> ListHeavyWeapons = new Dictionary<string, string> {
+            { "Nova Shotgun","DictionarySkinsNovaShotgun" },
+            { "XM1014 Shotgun","DictionarySkinsXM1014Shotgun" },
+            { "MAG-7 Shotgun","DictionarySkinsMAG7Shotgun" },
+            { "Sawed-Off Shotgun", "DictionarySkinsSawedOffShotgun" },
+            { "M249 machine gun", "DictionarySkinsM249MachineGun" },
+            { "Negev machine gun","DictionarySkinsNegevMachineGun" }
         };
         public static Dictionary<string, RarityStats> DictionarySkinsNovaShotgun = new Dictionary<string, RarityStats>
         {
@@ -67,7 +67,7 @@ namespace Analyzer.Models.StaticClasses
             {"Mandrel",RarityStats.consumerGrade}
 
         };
-        public static Dictionary<string,RarityStats> DictionarySkinsXM1014Shotgun = new Dictionary<string, RarityStats>()
+        public static Dictionary<string, RarityStats> DictionarySkinsXM1014Shotgun = new Dictionary<string, RarityStats>()
         {
             {"Frost Borre",RarityStats.milSpec},
             {"Elegant Vines",RarityStats.restricted},
@@ -105,7 +105,7 @@ namespace Analyzer.Models.StaticClasses
             {"CaliCamo",RarityStats.industrialGrade}
 
         };
-        public static Dictionary<string,RarityStats> DictionarySkinsMAG7Shotgun = new Dictionary<string, RarityStats>()
+        public static Dictionary<string, RarityStats> DictionarySkinsMAG7Shotgun = new Dictionary<string, RarityStats>()
         {
             {"Cinquedea",RarityStats.classified},
             {"Bulldozer",RarityStats.restricted},
@@ -141,7 +141,7 @@ namespace Analyzer.Models.StaticClasses
             {"Metallic DDPAT",RarityStats.industrialGrade},
             {"Rust Coat",RarityStats.consumerGrade}
         };
-        public static Dictionary<string,RarityStats> DictionarySkinsSawedOffShotgun = new Dictionary<string, RarityStats>()
+        public static Dictionary<string, RarityStats> DictionarySkinsSawedOffShotgun = new Dictionary<string, RarityStats>()
         {
             {"Copper",RarityStats.milSpec},
             {"First Class",RarityStats.milSpec},
@@ -201,7 +201,7 @@ namespace Analyzer.Models.StaticClasses
             {"Gator Mesh",RarityStats.industrialGrade},
 
         };
-        public static Dictionary<string, RarityStats> DictionarySkinsNegevMachineGun = new Dictionary<string, RarityStats>() 
+        public static Dictionary<string, RarityStats> DictionarySkinsNegevMachineGun = new Dictionary<string, RarityStats>()
         {
             {"Mjölnir",RarityStats.classified},
             {"Anodized Navy",RarityStats.milSpec},

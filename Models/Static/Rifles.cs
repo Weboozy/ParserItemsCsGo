@@ -9,18 +9,18 @@ namespace Analyzer.Models.StaticClasses
 {
     public static class Rifles
     {
-        public static List<string> ListRifles = new List<string>() {
-            "FAMAS",
-            "Galil AR",
-            "M4A1",
-            "M4A1-S",
-            "AK-47",
-            "AUG",
-            "SG 553",
-            "SSG 08",
-            "AWP",
-            "SCAR-20",
-            "G3SG1"
+        public static Dictionary<string, string> ListRifles = new Dictionary<string, string>() {
+            { "FAMAS","ListSkinsFAMAS"},
+            { "Galil AR","ListSkinsGalilAR" },
+            { "M4A1","ListSkinsM4A1" },
+            { "M4A1-S","ListSkinsM4A1" },
+            { "AK-47" ,"ListSkinsAK47"},
+            { "AUG","ListSkinsAUG"},
+            { "SG 553","ListSkinsSG553" },
+            { "SSG 08","ListSkinsSSG08"},
+            { "AWP","ListSkinsAWP" },
+            { "SCAR-20","ListSkinsSCAR20"},
+            { "G3SG1","ListSkinsG3SG1"}
         };
 
         public static Dictionary<string, RarityStats> ListSkinsFAMAS = new Dictionary<string, RarityStats>() {
